@@ -224,24 +224,22 @@ main {
   border: 3px lightgreen solid;
 }
 
-.japan-co,
-.japan-co-game {
+.japan-co {
   display: flex;
+}
+.japan-co-game {
+  display: block;
 }
 .japan-co .img {
   max-width: 30%;
   margin: 10px;
-}
-#piechart {
-  max-width: 20vw;
-  font-size: 10px;
 }
 .japan-co .text {
   max-width: 66%;
   margin: 10px;
 }
 .japan-co-game .text {
-  max-width: 50%;
+  max-width: 100%;
   margin: 10px;
 }
 .prize,
@@ -265,14 +263,10 @@ main {
   .index-main {
     max-width: 100%;
   }
-  .japan-co,
-  .japan-co-game {
+  .japan-co {
     flex-direction: column;
   }
   .japan-co .img,
-  #piechart {
-    max-width: 100%;
-  }
   .japan-co .text,
   .japan-co-game .text {
     max-width: 100%;
