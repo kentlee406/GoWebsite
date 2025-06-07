@@ -209,10 +209,13 @@ main {
   width: 5em;
 }
 
-.culture-list li {
+.culture-list li,
+.Taiwan-contacts li {
   list-style-type: disc;
   list-style-position: inside;
-  text-indent: 1em;
+  text-align: start;
+  text-indent: -1em;
+  margin-left: 1em;
 }
 
 .celebrity {
@@ -225,14 +228,20 @@ main {
 .japan-co-game {
   display: flex;
 }
-.japan-co .img,
-#piechart {
+.japan-co .img {
   max-width: 30%;
   margin: 10px;
 }
-.japan-co .text,
-.japan-co-game .text {
+#piechart {
+  max-width: 20vw;
+  font-size: 10px;
+}
+.japan-co .text {
   max-width: 66%;
+  margin: 10px;
+}
+.japan-co-game .text {
+  max-width: 50%;
   margin: 10px;
 }
 .prize,
@@ -240,8 +249,13 @@ main {
   list-style-type: disc;
   list-style-position: inside;
 }
-
-@media (max-width: 700px) {
+.china-teams tr,
+.china-teams td,
+.china-teams th {
+  border: 1px solid black;
+  border-collapse: collapse; /* 實線 */
+}
+@media (max-width: 777px) {
   .aside-main {
     flex-direction: column;
   }
